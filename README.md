@@ -173,9 +173,8 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- [ ] **Send Data to API**
+- [ ] **Recieve Data from API**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -215,8 +214,6 @@ I would like to thank Microverse for the chance to be in the team.
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://github.com/JOdiemo/Leader-Board/blob/dev/LICENSE) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+This project is [MIT](https://github.com/JOdiemo/Leader-Board/blob/dev/LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
