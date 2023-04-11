@@ -1,0 +1,72 @@
+@import url('http://fonts.cdnfonts.com/css/cocogoose');
+
+* {
+  font-family: "COCOGOOSE", sans-serif;
+}
+
+body {
+  margin: 0 auto;
+}
+
+h1 {
+  align-self: center;
+  margin-left: 35%;
+}
+
+.dflex {
+  display: flex;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+.main {
+  width: 60%;
+  justify-content: space-around;
+  background-color: aliceblue;
+  align-self: center;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 2%;
+}
+
+.top {
+  justify-content: space-between;
+}
+
+.add-list {
+  flex-direction: column;
+}
+
+.refresh-list {
+  width: 60%;
+}
+
+button {
+  border-radius: 4px;
+  border: none;
+  width: 150px;
+  font-size: 12px;
+  transition: all 0.5s;
+  box-shadow: 0 5px #666;
+  cursor: pointer;
+  padding: 20px;
+  height: 30px;
+}
+
+.add-btn {
+  float: right;
+  margin-right: 0;
+}
+
+.leaderboard {
+  margin-top: 20px;
+  width: 100%;
+  border: 2px solid #000;
+  padding: 50px;
+}
+
+.leaderboard tr:nth-child(even) {
+  background-color: #d3d3d3;
+}
