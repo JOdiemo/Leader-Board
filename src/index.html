@@ -15,7 +15,7 @@
       <h2>Recent Scores</h2>
       <button type="submit" class="refresh">Refresh</button>
     </div>
-    <div class="scoreboard dflex">
+    <div class="scoreboard dflex" id="scoreboard">
       <table class="leaderboard"></table>
       <!-- populated using js -->
     </div>
@@ -27,10 +27,10 @@
           <input type="text" class="name" placeholder="Add your name..." required>
         </div><br>
         <div>
-          <input type="text" class="score" placeholder="Add your score..." required>
+          <input type="number" min="0" class="score" placeholder="Add your score..." required>
         </div><br>
         <div>
-          <button type="submit" class="add-btn">Submit</button>
+          <button type="submit" class="add-btn" id="submitting">Submit</button>
         </div>
       </form>
   </section>

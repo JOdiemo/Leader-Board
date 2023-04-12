@@ -1,36 +1,28 @@
-const data = [
-  {
-    name: 'first',
-    score: '1',
-  },
-  {
-    name: 'second',
-    score: '3',
-  },
-  {
-    name: 'bye',
-    score: '10',
-  },
-  {
-    name: 'winner',
-    score: '4',
-  },
-  {
-    name: 'oh yes',
-    score: '2',
-  },
-];
+import { getfromURL } from './functions.js';
 
-const displayList = () => {
-  const sortArray = data.sort((a, b) => a.score - b.score);
-  const leaderboard = document.querySelector('.leaderboard');
-  sortArray.forEach((el) => {
-    const addUser = document.createElement('tr');
-    addUser.innerHTML = `
-      <tr class="cols">${el.name} :${el.score}</tr>
-    `;
-    leaderboard.appendChild(addUser);
+let adduser;
+const playerList = async () => {
+  const users = await getfromURL();
+  users.result.sort((a, b) => a.score - b.score);
+  const list = document.querySelector('.leaderboard');
+  users.result.forEach((el) => {
+    adduser = document.createElement('tr');
+    adduser.innerHTML = '';
+    adduser.innerHTML = `
+      <td class="cols">${el.user}: ${el.score}</td>
+      `;
+    list.appendChild(adduser);
   });
 };
 
-export default displayList;
+const clearInputs = () => {
+  document.querySelector('.name').value = '';
+  document.querySelector('.score').value = '';
+};
+
+const clearList = () => {
+  const parent = document.querySelector('.leaderboard');
+  parent.innerHTML = '';
+};
+
+export { playerList, clearInputs, clearList };
