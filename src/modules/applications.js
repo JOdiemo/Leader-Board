@@ -9,7 +9,7 @@ const playerList = async () => {
     adduser = document.createElement('tr');
     adduser.innerHTML = '';
     adduser.innerHTML = `
-      <td class="cols">${el.user}: ${el.score}</td>
+      <td class="cols">🏆  ${el.user}: ${el.score}</td>
       `;
     list.appendChild(adduser);
   });
