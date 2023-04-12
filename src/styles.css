@@ -6,11 +6,13 @@
 
 body {
   margin: 0 auto;
+  background-image: url("./asset/background.jpg");
 }
 
 h1 {
   align-self: center;
   margin-left: 35%;
+  color: azure;
 }
 
 .dflex {
@@ -68,5 +70,6 @@ button {
 }
 
 .leaderboard tr:nth-child(even) {
-  background-color: #d3d3d3;
+  background-color: #803c7c;
+  color: aquamarine;
 }
